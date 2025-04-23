@@ -1,0 +1,16 @@
+{
+  "go.useLanguageServer": true,
+  "editor.codeLens": true,
+  "gopls": {
+    "ui.codelenses": {
+      "test": true // 先只启用测试按钮
+    }
+  },
+  
+  "go.coverOnSave": false,
+  "go.coverOnTestPackage": true,
+  "go.testFlags": ["-v","-cover"],  // 直接显示覆盖率，不生成文件
+  "go.coverageOptions": "showBothCoveredAndUncoveredCode",     // 显示覆盖和未覆盖代码
+  
+}
+  
