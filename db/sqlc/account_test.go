@@ -3,9 +3,10 @@ package db
 import (
 	"context"
 	"database/sql"
-	"simplebank/util"
 	"testing"
 	"time"
+
+	"github.com/thisausername/simplebank/util"
 
 	"github.com/stretchr/testify/require"
 )
@@ -85,7 +86,7 @@ func TestListAccounts(t *testing.T) {
 	}
 
 	arg := ListAccountsParams{
-		Owner:  lastAccount.Owner,
+		//Owner:  lastAccount.Owner,
 		Limit:  5,
 		Offset: 0,
 	}
